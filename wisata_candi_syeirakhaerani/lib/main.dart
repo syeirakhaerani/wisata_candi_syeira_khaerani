@@ -34,11 +34,26 @@ class MyApp extends StatelessWidget {
         ),
         useMaterial3: true,
       ),
-      // home: const ProfileScreen(),
-      // home: DetailScreen(candi: candiList[0]),
-      // home: SignInScreen(),
-      // home: SearchScreen(),
-      home: HomeScreen(),
+      home: MainScreen(),
     );
   }
 }
+
+class MainScreen extends StatefulWidget {
+  const MainScreen ({super.key});
+
+  @override
+  State<MainScreen> createState() => _MainScreenState();
+}
+
+class _MainScreenState extends State<MainScreen> {
+  // TODO: 1. Deklarasikan variabel
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      // TODO: 2. Buat property body berupa widget yang ditampilkan
+      // TODO: 3. Buat property bottomNavigationBar dengan nilai Theme
+      // TODO: 4. Buat data dan child dan Theme
+    );
+  }
