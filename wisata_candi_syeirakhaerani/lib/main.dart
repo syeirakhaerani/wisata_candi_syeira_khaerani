@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:wisata_candi_syeirakhaerani/screens/home_screen.dart';
 import 'package:wisata_candi_syeirakhaerani/screens/seacrh_screen.dart';
 import 'package:wisata_candi_syeirakhaerani/screens/sign_in_screen.dart';
+import 'package:wisata_candi_syeirakhaerani/screens/sign_up_screen.dart';
 import 'screens/profile_screen.dart';
 import 'data/candi_data.dart';
 import "package:wisata_candi_syeirakhaerani/screens/detail_screen.dart";
@@ -38,6 +39,12 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       home: MainScreen(),
+      initialRoute: '/',
+      routes: {
+        '/homescreen': (context) => const HomeScreen(),
+        '/signin': (context) => const SignInScreen(),
+        '/signup': (context) => const SignUpScreen(),
+      },
     );
   }
 }
