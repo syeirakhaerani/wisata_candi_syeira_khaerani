@@ -38,11 +38,11 @@ class MyApp extends StatelessWidget {
         ),
         useMaterial3: true,
       ),
-      home: SignUpScreen(),
+      home: MainScreen(),
       initialRoute: '/',
       routes: {
         '/homescreen': (context) => const HomeScreen(),
-        '/signin': (context) =>  const SignInScreen(),
+        '/signin': (context) =>   SignInScreen(),
         '/signup': (context) => const SignUpScreen(),
 
       },
